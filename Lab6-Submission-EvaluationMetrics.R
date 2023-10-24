@@ -57,7 +57,6 @@ if (require("dplyr")) {
 
 # 1. Accuracy and Cohen's Kappa ----
 ## 1.a. Load the dataset ----
-# Load the Sonar dataset
 data("Sonar")
 
 # Set a random seed for reproducibility
