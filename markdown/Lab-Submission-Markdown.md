@@ -317,19 +317,11 @@ library(readr)
 
 ### 2.2. Display a graphical confusion matrix
 
-The code uses ggplot2 to create a heatmap visualization of a confusion
-matrix for a classification model. It represents actual values on the
-x-axis, predicted values on the y-axis, and cell colors indicate
-prediction frequencies. It aims to provide a clear representation of
-model performance. The fourfoldplot function is an alternative but less
-common way to visualize the confusion matrix.
-`{step-four-chunk} # Visualizing Confusion Matrix # Assuming 'confusion_matrix' is the confusion matrix you've computed library(ggplot2) confusion_df <- as.data.frame(as.table(confusion_matrix)) ggplot(data = confusion_df, aes(x = Reference, y = Prediction, fill = Freq)) +   geom_tile() +   labs(x = "Actual", y = "Predicted", fill = "Frequency") +   scale_fill_gradient(low = "lightblue", high = "red") +   theme_minimal() +   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +   ggtitle("Confusion Matrix") library(readr)`
-
 ``` r
 fourfoldplot(as.table(confusion_matrix), color = c("grey", "lightblue"), main = "Confusion Matrix")
 ```
 
-![](Lab-Submission-Markdown_files/figure-gfm/step-eight-chunk-1.png)<!-- -->
+![](Lab-Submission-Markdown_files/figure-gfm/step-four-chunk-1.png)<!-- -->
 
 # 3. RMSE, R Squared, and MAE:
 
