@@ -214,7 +214,7 @@ diabetes_model_glm <-
   train(diabetes ~ ., data = pima_indians_diabetes_train, method = "glm",
         metric = "Accuracy", trControl = train_control)
 
-## 1.e. Display the Model's Performance ----
+## 1 .e. Display the Model's Performance ----
 ### Option 1: Use the metric calculated by caret when training the model ----
 # The results show an accuracy of approximately 77% (slightly above the baseline
 # accuracy) and a Kappa of approximately 49%.

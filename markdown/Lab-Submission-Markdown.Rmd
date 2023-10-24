@@ -1,0 +1,74 @@
+---
+title: "Business Intelligence Lab Submission Markdown"
+author: "Lumin"
+date: "1/10/23"
+output:
+  github_document:
+    toc: yes
+    toc_depth: 4
+    fig_width: 6
+    fig_height: 4
+    df_print: default
+always_allow_html: true
+editor_options:
+  chunk_output_type: console
+---
+
+
+# Student Details
+
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Student ID Numbers and Names of Group Members** | 
+|                                                   |                                                                                                      |
+|                                                   | 1.  112827 - A - Mungai Kenneth                                                                      |
+|                                                   |                                                                                                      |
+|                                                   | 2.  123324 - B - Kelly Noella Sota                                                                     |
+|                                                   |                                                                                                      |
+|                                                   | 3.  134265 - A - Emmanuel Kiptoo                                                                   |
+|                                                   |                                                                                                      |
+|                                                   | 4.  ID - Group - Name                                                                                |
+|                                                   |                                                                                                      |
+|                                                   | 5.  ID - Group - Name                                                                                |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **GitHub Classroom Group Name**                   |    Lumin                                                                                                  |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Course Code**                                   | BBT4206                                                                                              |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Course Name**                                   | Business Intelligence II                                                                             |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Program**                                       | Bachelor of Business Information Technology                                                          |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| **Semester Duration**                             | 21^st^ August 2023 to 28^th^ November 2023                                                           |
++---------------------------------------------------+------------------------------------------------------------------------------------------------------+
+
+# Setup Chunk
+
+**Note:** the following "*KnitR*" options have been set as the defaults:\
+`knitr::opts_chunk$set(echo = TRUE, warning = FALSE, eval = TRUE, collapse = FALSE, tidy.opts = list(width.cutoff = 80), tidy = TRUE)`.
+
+More KnitR options are documented here <https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html> and here <https://yihui.org/knitr/options/>.
+
+```{r setup, include=FALSE}
+library(formatR)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, eval = TRUE,
+                      collapse = FALSE, tidy = TRUE)
+```
+
+**Note:** the following "*R Markdown*" options have been set as the defaults:
+
+> output:\
+> \
+> github_document:\
+> toc: yes\
+> toc_depth: 4\
+> fig_width: 6\
+> fig_height: 4\
+> df_print: default\
+> \
+> editor_options:\
+> chunk_output_type: console
+
+
+# Step 1: Install and Load Required Packages:
+In this step, we ensure that the necessary R packages are installed and loaded. Packages are collections of R functions, data, and compiled code that extend the functionality of R. The install.packages() function is used to install packages, and library() is used to load them.
+```
