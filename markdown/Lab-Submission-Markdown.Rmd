@@ -189,21 +189,7 @@ library(readr)
 ```
 
 ### 2.2. Display a graphical confusion matrix
-```{step-four-chunk}
-# Visualizing Confusion Matrix
-# Assuming 'confusion_matrix' is the confusion matrix you've computed
-confusion_df <- as.data.frame(as.table(confusion_matrix))
-ggplot(data = confusion_df, aes(x = Reference, y = Prediction, fill = Freq)) +
-  geom_tile() +
-  labs(x = "Actual", y = "Predicted", fill = "Frequency") +
-  scale_fill_gradient(low = "lightblue", high = "red") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  ggtitle("Confusion Matrix")
-```
-
-
-```{r step-eight-chunk}
+```{r step-four-chunk}
 fourfoldplot(as.table(confusion_matrix), color = c("grey", "lightblue"),
              main = "Confusion Matrix")
 ```
